@@ -1,0 +1,160 @@
+.wrap {
+    position: fixed;
+    top:20px;
+    left: 50%;
+    margin-left: -225px;
+    width: 450px;
+    border-radius: 10px;
+    border: 1px solid #faf3fc;
+    bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+}
+.header {
+    height: 55px;
+    background: linear-gradient(90deg,rgba(246, 60, 47, 0.6), rgba(128, 58, 242, 0.6));
+    overflow: hidden;
+}
+.header h3 {
+    float: left;
+    color: #faf3fc;
+    line-height: 55px;
+    letter-spacing: 2px;
+    margin-left: 25px;
+    font-weight: normal;
+    font-size: 18px;
+    text-shadow: 0 0 5px #944846;
+}
+.header img {
+    float: right;
+    margin: 7px 25px 0 0;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #f7f2fe;
+}
+
+/* 中间聊天内容区域 */
+.main {
+    position: absolute;
+    left:0;
+    right: 0;
+    top:55px;
+    bottom: 55px;
+    background-color: #f4f3f3;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.talk_list{
+    position: absolute;
+    width:100%;
+    left:0px;
+    top:100px;
+}
+.talk_list .left_word img {
+    float: left;
+    margin-left: 20px;
+}
+.talk_list .left_word span {
+    position: relative;
+    float: left;
+    padding: 10px 15px;
+    margin-left: 13px;
+    background-color: #fe9697;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 16px;
+    max-width: 290px;
+    line-height: 24px;
+}
+.talk_list .left_word span:before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 3px;
+    width: 13px;
+    height: 12px;
+    background: url('../img/corner01.png') no-repeat;
+}
+.talk_list li {
+    overflow: hidden;
+    margin: 20px 0 30px;
+}
+.talk_list .right_word img {
+    float: right;
+    margin-left: 20px;
+}
+.talk_list .right_word span {
+    position: relative;
+    float: right;
+    padding: 10px 15px;
+    margin-right: 13px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+    font-size: 16px;
+    max-width: 290px;
+    line-height: 24px;
+}
+.talk_list .right_word span:before {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 3px;
+    width: 13px;
+    height: 12px;
+    background: url('../img/corner02.png') no-repeat;
+}
+.drag_bar {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    
+}
+.drager {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6px;
+    background-color: #cdcdcd;
+
+}
+
+/* 底部消息编辑区域 */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    background-color: #fff;
+}
+.footer img {
+    float: left;
+    margin: 8px 0 0 20px;
+}
+.input_txt {
+    float: left;
+    width: 270px;
+    height: 37px;
+    margin: 9px 0 0 20px;
+    outline: none;
+    text-indent: 15px;
+    background-color: #f4f3f3;
+    border-radius: 8px;
+    border:0px;
+}
+.btnEnter {
+    float: left;
+    width: 70px;
+    height: 37px;
+    border-radius: 8px;
+    background-color: #fe9697;
+    color: #fff;
+    border:0px;
+    margin: 9px 0 0 15px;
+    outline: none;
+    cursor: pointer;
+}
